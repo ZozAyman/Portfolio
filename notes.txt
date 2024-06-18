@@ -1,0 +1,75 @@
+// Create Animation Of Text Landing Page.
+// gsap.from("g path", {
+//     strokeDasharray: 64.68521881103516,
+//     strokeOffest: 64.68521881103516,
+//     duration: 1.5,
+//     delay : 1.5,
+//     ease: Power3
+// })
+
+
+// ======= Home-page1 Img =========
+https://t4.ftcdn.net/jpg/07/77/40/55/240_F_777405510_tcglGidXeoWTP3kA68TY8EHUtiWbyqb7.jpg
+// ======= Home-page2 Img =========
+https://t3.ftcdn.net/jpg/07/73/11/96/240_F_773119657_tVzpccEtc9UycnPp7g9hTH3EdnT8cICN.jpg
+// ======= Home-page3 Img =========
+https://t4.ftcdn.net/jpg/07/79/10/53/240_F_779105304_7X0jSFqjoOv3EFj02WGLVO6FkkPyHyCZ.jpg
+
+
+
+// ======= Video Animation ========
+https://v.ftcdn.net/07/63/46/68/240_F_763466817_boSNe9XsxLoA1feE8ywiOWx4jqWCNaqJ.mp4
+// ======= Video Animation2 ========
+https://v.ftcdn.net/07/78/14/72/240_F_778147273_3S8df7pTqwUpxRm1pAM6WNXk28SBQR3S.mp4
+
+
+// ====== Arrow Bottom Right ======
+<svg class="o-ui-arrow" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M3.10162 3.10156L62.9999 62.9999" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M63 1.00001L63 63L0.999989 63" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
+
+// ====== Arrow Bottom Left ======
+<svg class="o-ui-arrow" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M3.10162 3.10156L62.9999 62.9999" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M63 1.00001L63 63L0.999989 63" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
+
+
+
+// ====== Elem Imgs ======= //
+                        <img src="https://abhishekjha.me/aei2.f4af4eea.png" alt="">
+                        <img src="https://abhishekjha.me/aei3.9946c78c.png" alt="">
+                        <img src="https://abhishekjha.me/aei4.3c14b4c9.png" alt="">
+                        <img src="https://abhishekjha.me/aei5.5e3b3f8d.png" alt=""> 
+
+
+
+// ====== Eye Img ========//
+https://assets-global.website-files.com/60ec496582f5cfe61dfe9c82/63076fa7242f907c1a4b7da3_Eye.svg
+
+
+
+
+
+// Style Boxes show img
+//js
+let docBox = document.querySelectorAll(".doc-box");
+docBox.forEach(function(x) {
+  x.addEventListener("mouseenter", () => {
+    gsap.to(x.childNodes[3],{
+      opacity: 1,
+      scale: 1
+    })
+  })
+  x.addEventListener("mouseleave", () => {
+    gsap.to(x.childNodes[3],{
+      opacity: 0,
+      scale: 0
+    })
+  })
+
+})
+
+//css
+width: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 5px;
+    opacity: 0;
+    scale: 0;
