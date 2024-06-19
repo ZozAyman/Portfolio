@@ -211,6 +211,7 @@ a {
     cursor: pointer;
     background: white;
     border-radius: 50%;
+    z-index: 9999;
 }
 nav {
     padding: 0 30px;
