@@ -679,9 +679,10 @@ path, polyline {
     font-weight: var(--weight-400);
     font-size: 1.2vw;
     letter-spacing: 0.5px;
+    color: var(--main-color);
 }
 #projects .projects-wrapper .box-project-info .right p span {
-    color: blue;
+    color: var(--secondary-color);
     font-weight: var(--weight-600);
 }
 #projects .projects-wrapper .box-project-info img {
@@ -943,6 +944,7 @@ svg {
 #services .services-wrapper .box-services .info-services p {
     margin-top: 1vw;
     font-size: 1.1vw;
+    color: var(--secondary-color);
 }
 #services .services-wrapper .box-services .info-services .btn-services {
     margin-top: 1.5vw;
